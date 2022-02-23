@@ -10,13 +10,13 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='Strings',
+    name='Strings2',
     version=strings.__version__,
     author=strings.__name__,
     author_email='121116728@qq.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/CountChangye/Strings',
+    url='https://github.com/CountChangye/Strings2',
     packages=setuptools.find_packages(),
     license='LICENSE',
     description='对字符串的操作',
