@@ -4,15 +4,15 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 import setuptools
-from Strings import string
+from Strings import strings
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name='Strings',
-    version=string.__version__,
-    author=string.__name__,
+    version=strings.__version__,
+    author=strings.__name__,
     author_email='121116728@qq.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
