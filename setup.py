@@ -4,12 +4,11 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 from distutils.core import setup
-
+import string
 setup(
-    name='mydates',
-    version='0.0.1',
-    author='X.X',
-    author_email='xx@example.com',
+    name='Strings',
+    version=string.__version__,
+    author=string.__name__,
     url='www.example.com',
     license='LICENSE',
     packages=['mydates'],

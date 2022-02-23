@@ -4,4 +4,7 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
-from . import string
+from .string import *
+
+__author__ = "CountChangye <121116728@qq.com>"
+__version__ = "0.0.1"
