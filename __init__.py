@@ -6,5 +6,4 @@
 
 from .string import *
 
-__author__ = "CountChangye <121116728@qq.com>"
-__version__ = "0.0.1"
+

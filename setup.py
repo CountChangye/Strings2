@@ -5,11 +5,17 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 import setuptools
 import string
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setuptools.setup(
     name='Strings',
     version=string.__version__,
     author=string.__name__,
     author_email='121116728@qq.com',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/CountChangye/Strings',
     packages=setuptools.find_packages(),
     license='LICENSE',
