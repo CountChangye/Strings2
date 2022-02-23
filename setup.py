@@ -9,10 +9,11 @@ setup(
     name='Strings',
     version=string.__version__,
     author=string.__name__,
-    url='www.example.com',
+    author_email='121116728@qq.com',
+    url='https://github.com/CountChangye/Strings',
     license='LICENSE',
-    packages=['mydates'],
-    description='An example of building Python package.',
+    packages=['Strings'],
+    description='对字符串的操作',
     install_requires=[
         # 'python>=3.6.0',
         # 'pandas>=0.10.0'
