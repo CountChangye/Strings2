@@ -19,7 +19,7 @@ setuptools.setup(
     url='https://github.com/CountChangye/Strings2',
     packages=setuptools.find_packages(),
     license='LICENSE',
-    description='对字符串的操作',
+    description='Some operations on strings',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
