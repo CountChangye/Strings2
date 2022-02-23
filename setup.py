@@ -4,7 +4,7 @@
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 import setuptools
-import string
+from Strings import string
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
