@@ -3,19 +3,20 @@
 #  Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
 #  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
-from distutils.core import setup
+import setuptools
 import string
-setup(
+setuptools.setup(
     name='Strings',
     version=string.__version__,
     author=string.__name__,
     author_email='121116728@qq.com',
     url='https://github.com/CountChangye/Strings',
+    packages=setuptools.find_packages(),
     license='LICENSE',
-    packages=['Strings'],
     description='对字符串的操作',
-    install_requires=[
-        # 'python>=3.6.0',
-        # 'pandas>=0.10.0'
-    ]
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
