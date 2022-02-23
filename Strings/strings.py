@@ -5,7 +5,7 @@
 #  Vestibulum commodo. Ut rhoncus gravida arcu.
 
 __author__ = "CountChangye <121116728@qq.com>"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 class string(str):
@@ -25,8 +25,18 @@ class string(str):
     def add(self, value):
         return self + string(value)
 
+    # 将字符串分割成字符
+    @property
+    def character_set(self):
+        return list(self)
+
+    # 将字符串分割成字符并获取指定位置字符
+    def decompose(self, index):
+        return self.character_set[index - 1]
+
 
 if __name__ == "__main__":
     s = string("Hello")
     x = s.add(", world")
     print(type(x))
+    print(s.decompose(5))
