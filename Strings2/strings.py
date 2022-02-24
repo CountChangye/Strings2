@@ -28,7 +28,6 @@ class string(str):
     """
     将字符串分割成字符
     """
-
     @property
     def character_set(self):
         return list(self)
@@ -36,7 +35,6 @@ class string(str):
     """
     将字符串分割成字符并获取指定位置字符
     """
-
     def decompose(self, index):
         return self.character_set[index - 1]
 
@@ -47,7 +45,6 @@ class string(str):
     如果输出，则output_indexs==True;反之，则output_indexs==False
     如果输出索引，则字符出现次数会在索引列表的最后出现
     """
-
     def judgment_times(self, target_character: str, output_indexs: bool):
         if not output_indexs:
             return sum(
