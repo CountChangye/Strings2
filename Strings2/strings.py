@@ -25,27 +25,27 @@ class string(str):
     def add(self, value):
         return self + string(value)
 
-    """
-    将字符串分割成字符
-    """
     @property
     def character_set(self):
+        """
+        将字符串分割成字符
+        """
         return list(self)
 
-    """
-    将字符串分割成字符并获取指定位置字符
-    """
     def decompose(self, index):
+        """
+        将字符串分割成字符并获取指定位置字符
+        """
         return self.character_set[index - 1]
 
-    """
-    判断某个字符在字符串中出现了多少次
-    条件参数output_indexs
-    决定是否输出字符在字符串中出现的位置索引
-    如果输出，则output_indexs==True;反之，则output_indexs==False
-    如果输出索引，则字符出现次数会在索引列表的最后出现
-    """
     def judgment_times(self, target_character: str, output_indexs: bool):
+        """
+           判断某个字符在字符串中出现了多少次
+           条件参数output_indexs
+           决定是否输出字符在字符串中出现的位置索引
+           如果输出，则output_indexs==True;反之，则output_indexs==False
+           如果输出索引，则字符出现次数会在索引列表的最后出现
+        """
         if not output_indexs:
             return sum(
                 single_character == target_character
